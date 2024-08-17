@@ -1,0 +1,304 @@
+.circle {
+  border-radius: 50%;
+  border: 1px solid hsl(236, 33%, 92%);
+  width: 25px;
+  height: 25px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Josefin Sans, Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.background {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/bg-desktop-light.jpg);
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 5rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 550px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+}
+main header {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+main header h1 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+main header img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+main header img.sun {
+  display: none;
+}
+main .new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+main .new input {
+  border: none;
+  color: hsl(235, 21%, 11%);
+  width: 100%;
+  margin-left: 18px;
+  padding: 5px 0;
+  font-size: 18px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  main .new input {
+    font-size: 14px;
+  }
+  main .new input::-webkit-input-placeholder {
+    font-size: 18px;
+    font-size: 14px;
+  }
+  main .new input::-moz-placeholder {
+    font-size: 18px;
+    font-size: 14px;
+  }
+  main .new input:-ms-input-placeholder {
+    font-size: 18px;
+    font-size: 14px;
+  }
+  main .new input::-ms-input-placeholder {
+    font-size: 18px;
+    font-size: 14px;
+  }
+  main .new input::placeholder {
+    font-size: 18px;
+    font-size: 14px;
+  }
+}
+main .new input:focus {
+  border: none;
+  outline: none;
+}
+main .list {
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 13px 4px hsla(235, 19%, 35%, 0.19);
+          box-shadow: 0px 0px 13px 4px hsla(235, 19%, 35%, 0.19);
+}
+main .list .list-content {
+  list-style: none;
+  color: hsl(235, 19%, 35%);
+}
+main .list .list-content li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+  padding: 25px;
+  line-height: 1.3;
+}
+main .list .list-content li .circle {
+  cursor: pointer;
+}
+main .list .list-content li .circle img {
+  display: none;
+}
+main .list .list-content li span {
+  margin-left: 18px;
+  cursor: pointer;
+}
+main .list .list-content li.check .circle {
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(192, 100%, 67%)), to(hsl(280, 87%, 65%)));
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .list .list-content li.check .circle img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .list .list-content li.check span {
+  text-decoration: line-through;
+  color: hsl(236, 9%, 61%);
+}
+main .list .list-content li .cross {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 600px) {
+  main .list .list-content li .cross {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+main .list .list-content li:hover .cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .list footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  padding: 25px 25px;
+  color: hsl(236, 9%, 61%);
+  position: relative;
+}
+main .list footer .details {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 600px) {
+  main .list footer .details {
+    bottom: -80px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 0px 13px 4px hsla(235, 19%, 35%, 0.19);
+            box-shadow: 0px 0px 13px 4px hsla(235, 19%, 35%, 0.19);
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
+main .list footer .details span {
+  cursor: pointer;
+}
+main .list footer .details span:hover {
+  color: hsl(235, 21%, 11%);
+}
+main .list footer .details span.active {
+  color: hsl(220, 98%, 61%);
+}
+main .list footer .details span:not(:last-child) {
+  margin-right: 10px;
+}
+@media (max-width: 600px) {
+  main .list footer .details span:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+main .list footer .clear-completed {
+  cursor: pointer;
+}
+main .list footer .clear-completed:hover {
+  color: hsl(235, 19%, 35%);
+}
+main .drag {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: hsl(236, 9%, 61%);
+}
+
+.dark {
+  background-color: hsl(235, 21%, 11%);
+}
+.dark .background {
+  background-image: url(../images/bg-desktop-dark.jpg);
+}
+.dark main header img.moon {
+  display: none;
+}
+.dark main header img.sun {
+  display: block;
+}
+.dark main .new {
+  background-color: hsl(235, 24%, 19%);
+}
+.dark main .new input {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 39%, 85%);
+}
+.dark main .list {
+  background-color: hsl(235, 24%, 19%);
+}
+.dark main .list .list-content {
+  color: hsl(234, 39%, 85%);
+}
+.dark main .list .list-content li {
+  border-bottom-color: hsl(237, 14%, 26%);
+}
+.dark main .list .list-content li .circle {
+  border-color: hsl(237, 14%, 26%);
+}
+.dark main .list .list-content li.check {
+  color: hsl(234, 11%, 52%);
+}
+.dark main .list footer {
+  color: hsl(234, 11%, 52%);
+}
+.dark main .list footer .details {
+  background-color: hsl(235, 24%, 19%);
+}
+.dark main .list footer .details span:hover {
+  color: hsl(236, 33%, 92%);
+}
+.dark main .list footer .details span.active {
+  color: hsl(220, 98%, 61%);
+}
+.dark main .list footer .clear-completed:hover {
+  color: hsl(234, 39%, 85%);
+}

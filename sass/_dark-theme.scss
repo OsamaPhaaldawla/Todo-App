@@ -1,0 +1,59 @@
+.dark {
+  background-color: $very-dark-blue;
+  .background {
+    background-image: url(../images/bg-desktop-dark.jpg);
+  }
+  main {
+    header {
+      img {
+        &.moon {
+          display: none;
+        }
+        &.sun {
+          display: block;
+        }
+      }
+    }
+    .new {
+      background-color: $very-dark-desaturated-blue;
+      input {
+        background-color: $very-dark-desaturated-blue;
+        color: $light-grayish-blue;
+      }
+    }
+    .list {
+      background-color: $very-dark-desaturated-blue;
+      .list-content {
+        color: $light-grayish-blue;
+        li {
+          border-bottom-color: $very-dark-grayish-blue-3;
+          .circle {
+            border-color: $very-dark-grayish-blue-3;
+          }
+          &.check {
+            color: $dark-grayish-blue-2;
+          }
+        }
+      }
+      footer {
+        color: $dark-grayish-blue-2;
+        .details {
+          background-color: $very-dark-desaturated-blue;
+          span {
+            &:hover {
+              color: $very-light-grayish-blue;
+            }
+            &.active {
+              color: $bright-blue;
+            }
+          }
+        }
+        .clear-completed {
+          &:hover {
+            color: $light-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}

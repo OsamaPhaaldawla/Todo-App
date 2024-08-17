@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <main>
+      <div class="container">
+        <header>
+          <h1>Todo</h1>
+          <img class="moon" src="images/icon-moon.svg" alt="icon-moon" />
+          <img class="sun" src="images/icon-sun.svg" alt="icon-moon" />
+        </header>
+
+        <label for="new-item" class="new">
+          <div class="circle"></div>
+          <input id="new-item" type="text" placeholder="Create a new todo.." />
+        </label>
+        <div class="list">
+          <ul class="list-content"></ul>
+          <footer>
+            <span class="left"><span class="count">0</span> items left</span>
+            <div class="details">
+              <span class="all active">All</span>
+              <span class="active-span">Active</span>
+              <span class="completed">Completed</span>
+            </div>
+            <span class="clear-completed">Clear Completed</span>
+          </footer>
+        </div>
+        <p class="drag">Drag and drop to reorder list</p>
+      </div>
+    </main>
+
+    <!-- Add dynamic number -->
+    <script src="index.js"></script>
+  </body>
+</html>
